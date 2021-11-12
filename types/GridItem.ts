@@ -1,5 +1,3 @@
-import { Media } from "./common";
-
 type Area = {
   gridArea?: string;
   gridColumn?: string;
@@ -20,7 +18,3 @@ type PlaceSelf = {
  * GRID ITEM
  */
 export type GridItem = Area & PlaceSelf;
-
-export type GridItemResponsive = {
-  [key in keyof GridItem]?: GridItem[key] | Media<GridItem[key]>;
-};

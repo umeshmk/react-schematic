@@ -1,7 +1,7 @@
-import { Gap, Media } from "./common";
+import { Gap } from "./common";
 
 type Basic = {
-  flexFlow: string;
+  flexFlow?: string;
   flexDirection?: "row" | "column" | "row-reverse" | "column-reverse";
   wrap?: "wrap" | "nowrap" | "wrap-reverse";
 };
@@ -34,7 +34,3 @@ export type Flex = Basic & {
   alignContent?: AlignContent;
   justifyContent?: JustifyContent;
 } & Gap;
-
-export type FlexResponsive = {
-  [key in keyof Flex]?: Flex[key] | Media<Flex[key]>;
-};

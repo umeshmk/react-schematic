@@ -33,9 +33,12 @@ _Not strict though_
   - `margin, padding `
 - Import first, then Install with breakpoints object and reexport as element/Grid etc
 - Never use grid/flex Items instead use grid/flex containers with boolean props `isFlexItem / isGridItem` . This avoids too much nested components.
+- Breakpoints for Media queries - Must be (min-width) only. It will scale upwards to higher widths by default.
+- Responsive breakpoints - predefined keys - `xs,sm,md,lg,xl`
+- First key in breakpoints - value must always be `<key>:0`
 
 ## Unopinionated
 
 - No extra global theme just use default styled components theme
-- Responsive breakpoints as per your requirements
+- Responsive breakpoints as per your requirements (Only values not keys)
 - Naming too like **xs** or **mobile**

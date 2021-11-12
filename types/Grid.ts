@@ -1,8 +1,8 @@
-import { Gap, Media } from "./common";
+import { Gap } from "./common";
 
 type Basic = {
-  display: "grid" | "inline-grid";
-  grid: string; // short for template & auto
+  display?: "grid" | "inline-grid";
+  grid?: string; // short for template & auto
 };
 
 type Template = {
@@ -48,7 +48,3 @@ type Auto = {
  * GRID CONTAINER
  */
 export type Grid = Basic & Template & PlaceItems & PlaceContent & Auto & Gap;
-
-export type GridResponsive = {
-  [key in keyof Grid]?: Grid[key] | Media<Grid[key]>;
-};

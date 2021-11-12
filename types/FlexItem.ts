@@ -1,5 +1,3 @@
-import { Media } from "./common";
-
 /**
  * FLEX ITEM
  */
@@ -17,8 +15,4 @@ export type FlexItem = {
     | "center"
     | "stretch"
     | "baseline";
-};
-
-export type FlexItemResponsive = {
-  [key in keyof FlexItem]?: FlexItem[key] | Media<FlexItem[key]>;
 };
