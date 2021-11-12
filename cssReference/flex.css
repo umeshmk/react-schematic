@@ -1,0 +1,29 @@
+/* ====================== */
+/* CSSTRICKS - FLEX CONTAINER */
+/* ===================== */
+display: flex; /* or inline-flex */
+
+flex-flow: column wrap;
+flex-direction: row | row-reverse | column | column-reverse;
+flex-wrap: nowrap | wrap | wrap-reverse;
+
+justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+
+align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline;
+
+align-content: normal | flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | baseline | first baseline | last baseline;
+
+gap
+row-gap
+column-gap
+
+
+/* ====================== */
+/* CSSTRICKS - FLEX ITEMS */
+/* ===================== */
+flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+order: 5; /* default is 0 */
+flex-grow: 4; /* default 0 */
+flex-shrink: 3; /* default 1 */
+flex-basis: string
+align-self: auto | flex-start | flex-end | center | baseline | stretch;

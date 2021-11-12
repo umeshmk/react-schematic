@@ -1,0 +1,51 @@
+/* ====================== */
+/* CSSTRICKS - GRID CONTAINER */
+/* ===================== */
+display: grid | inline-grid;
+
+grid	/* A shorthand property for the grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties */
+
+/* TEMPLATE */
+grid-template
+grid-template-areas
+grid-template-columns
+grid-template-rows
+
+/* GAP */
+gap	  
+column-gap
+row-gap
+
+/* PLACE ITEMS */
+place-items: <align-items> / <justify-items>
+justify-items: start | end | center | stretch;
+align-items: start | end | center | stretch;
+
+/* PLACE CONTENT */
+place-content: <align-content> / <justify-content> 
+justify-content: start | end | center | stretch | space-around | space-between | space-evenly;    
+align-content: start | end | center | stretch | space-around | space-between | space-evenly;    
+
+/* AUTO */
+grid-auto-flow: row | column | row dense | column dense;
+grid-auto-rows	/* Specifies a default row size */
+grid-auto-columns	/* Specifies a default column size */
+
+
+/* ====================== */
+/* CSSTRICKS - GRID ITEMS */
+/* ===================== */
+
+/* AREA */
+grid-area	/* Either specifies a name for the grid item, or this property is a shorthand property for the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties */
+grid-column	/* A shorthand property for the grid-column-start and the grid-column-end properties */
+grid-row	/* A shorthand property for the grid-row-start and the grid-row-end properties */
+grid-column-start	/* Specifies where to start the grid item */
+grid-row-start	/* Specifies where to start the grid item */
+grid-column-end	/* Specifies where to end the grid item */
+grid-row-end	/* Specifies where to end the grid item */
+
+place-self: <align-self> / <justify-self> 
+justify-self: start | end | center | stretch;
+align-self: start | end | center | stretch;
+
