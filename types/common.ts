@@ -13,4 +13,7 @@ export type Breakpoints = {
   xl: number;
 };
 
-// export type MediaKeys = keyof Breakpoints;
+// T = any component type but not responsive type
+export type Css<T> = {
+  [key in keyof T]: (v: T[key]) => string;
+};

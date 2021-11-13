@@ -2,7 +2,7 @@ import { Breakpoints } from ".";
 import { ContainerType } from "./Container";
 import { Flex } from "./Flex";
 import { FlexItem } from "./FlexItem";
-import { Grid } from "./Grid";
+import { GridType } from "./Grid";
 import { GridItem } from "./GridItem";
 
 type Media<T> = {
@@ -24,7 +24,7 @@ export type FlexItemResponsive = {
 };
 
 export type GridResponsive = {
-  [key in keyof Grid]?: Grid[key] | Media<Grid[key]>;
+  [key in keyof GridType]?: GridType[key] | Media<GridType[key]>;
 };
 
 export type GridItemResponsive = {

@@ -47,4 +47,9 @@ type Auto = {
 /**
  * GRID CONTAINER
  */
-export type Grid = Basic & Template & PlaceItems & PlaceContent & Auto & Gap;
+export type GridType = Basic &
+  Template &
+  PlaceItems &
+  PlaceContent &
+  Auto &
+  Gap;

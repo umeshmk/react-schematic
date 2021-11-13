@@ -1,20 +1,10 @@
 import defaultValues from "../defaultValues";
-import { atMedia } from "../mediaQueries";
-import { ContainerType } from "../types";
+import { ContainerType, Css } from "../types";
+import { createCss } from "./createCss";
 
-type GetCss = {
-  [key in keyof ContainerType]: (v) => string;
+const css: Css<ContainerType> = {
+  // key = xs,sm,md....
+  maxWidth: (key) => `max-width: ${defaultValues.maxWidths[key]}px;`,
 };
 
-const css: GetCss = {
-  maxWidth: (key) => key && `max-width: ${defaultValues.maxWidths[key]}px;`, // key = xs,sm,md....
-};
-
-const allMediaCss = (mediaKey, p) => {
-  return `${atMedia[mediaKey]} { ${css.maxWidth(p.maxWidth[mediaKey])} }`;
-};
-
-export const ContainerCss = {
-  css,
-  allMediaCss,
-};
+export const getContainerCss = (p) => createCss(css, p);
