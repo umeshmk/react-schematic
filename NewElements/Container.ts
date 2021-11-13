@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { createMediaQueries } from "../createMediaQueries";
+import { atMedia } from "../mediaQueries";
 import { ContainerCss } from "../css";
 import { isStr, isUnDef } from "../helper";
 import { ContainerResponsive } from "../types";
 
-const atMedia = createMediaQueries();
 const { allMediaCss, css } = ContainerCss;
 
 export const Container = styled.section<ContainerResponsive>`
