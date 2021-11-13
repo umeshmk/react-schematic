@@ -1,16 +1,18 @@
-import { MediaKeys } from "./common";
-import { Container } from "./Container";
+import { Breakpoints } from ".";
+import { ContainerType } from "./Container";
 import { Flex } from "./Flex";
 import { FlexItem } from "./FlexItem";
 import { Grid } from "./Grid";
 import { GridItem } from "./GridItem";
 
 type Media<T> = {
-  [key in MediaKeys]?: T;
+  [key in keyof Breakpoints]?: T;
 };
 
+export type MediaQueries = Media<string>;
+
 export type ContainerResponsive = {
-  [key in keyof Container]?: Container[key] | Media<Container[key]>;
+  [key in keyof ContainerType]?: ContainerType[key] | Media<ContainerType[key]>;
 };
 
 export type FlexResponsive = {

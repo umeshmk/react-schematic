@@ -13,12 +13,4 @@ export type Breakpoints = {
   xl: number;
 };
 
-export type MediaKeys = keyof Breakpoints;
-
-export type MaxWidths = {
-  // xs: number;
-  sm: number;
-  md: number;
-  lg: number;
-  xl: number;
-};
+// export type MediaKeys = keyof Breakpoints;

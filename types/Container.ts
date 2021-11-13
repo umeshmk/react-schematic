@@ -1,3 +1,9 @@
-import { MaxWidths } from "./common";
+export type MaxWidths = {
+  // xs: number;
+  sm: number;
+  md: number;
+  lg: number;
+  xl: number;
+};
 
-export type Container = { maxWidth?: keyof MaxWidths };
+export type ContainerType = { maxWidth?: keyof MaxWidths };
