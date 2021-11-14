@@ -1,6 +1,7 @@
 import { Gap } from "./common";
 
 type Basic = {
+  display?: "flex" | "inline-flex";
   flexFlow?: string;
   flexDirection?: "row" | "column" | "row-reverse" | "column-reverse";
   wrap?: "wrap" | "nowrap" | "wrap-reverse";
@@ -29,7 +30,7 @@ type JustifyContent =
 /**
  * FLEX
  */
-export type Flex = Basic & {
+export type FlexType = Basic & {
   alignItems?: AlignItems;
   alignContent?: AlignContent;
   justifyContent?: JustifyContent;

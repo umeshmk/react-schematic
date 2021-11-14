@@ -17,4 +17,4 @@ type PlaceSelf = {
 /**
  * GRID ITEM
  */
-export type GridItem = Area & PlaceSelf;
+export type GridItemType = Area & PlaceSelf;

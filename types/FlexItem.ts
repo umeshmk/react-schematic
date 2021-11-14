@@ -2,7 +2,7 @@
  * FLEX ITEM
  */
 
-export type FlexItem = {
+export type FlexItemType = {
   flex?: string;
   order?: number;
   flexGrow?: number;

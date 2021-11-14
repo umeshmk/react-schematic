@@ -1,10 +1,9 @@
 import { isDef, isNotObj, isObj } from "../helper";
 import { atMedia } from "../mediaQueries";
 
-// allProps > css ---- more props to iterate.
-// so iterate over css is faster
-
 // p is all props of a component
+// p > css ---- more props to iterate.
+// so iterate over css is faster
 
 // eg: prop='foo'
 const createValidCss = (css, p) =>

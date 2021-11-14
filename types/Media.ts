@@ -1,9 +1,9 @@
 import { Breakpoints } from ".";
 import { ContainerType } from "./Container";
-import { Flex } from "./Flex";
-import { FlexItem } from "./FlexItem";
+import { FlexType } from "./Flex";
+import { FlexItemType } from "./FlexItem";
 import { GridType } from "./Grid";
-import { GridItem } from "./GridItem";
+import { GridItemType } from "./GridItem";
 
 type Media<T> = {
   [key in keyof Breakpoints]?: T;
@@ -11,22 +11,22 @@ type Media<T> = {
 
 export type MediaQueries = Media<string>;
 
-export type ContainerResponsive = {
+export type ContainerResponsiveType = {
   [key in keyof ContainerType]?: ContainerType[key] | Media<ContainerType[key]>;
 };
 
-export type FlexResponsive = {
-  [key in keyof Flex]?: Flex[key] | Media<Flex[key]>;
+export type FlexResponsiveType = {
+  [key in keyof FlexType]?: FlexType[key] | Media<FlexType[key]>;
 };
 
-export type FlexItemResponsive = {
-  [key in keyof FlexItem]?: FlexItem[key] | Media<FlexItem[key]>;
+export type FlexItemResponsiveType = {
+  [key in keyof FlexItemType]?: FlexItemType[key] | Media<FlexItemType[key]>;
 };
 
-export type GridResponsive = {
+export type GridResponsiveType = {
   [key in keyof GridType]?: GridType[key] | Media<GridType[key]>;
 };
 
-export type GridItemResponsive = {
-  [key in keyof GridItem]?: GridItem[key] | Media<GridItem[key]>;
+export type GridItemResponsiveType = {
+  [key in keyof GridItemType]?: GridItemType[key] | Media<GridItemType[key]>;
 };
