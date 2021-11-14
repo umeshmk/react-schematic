@@ -1,7 +1,6 @@
 import { Css, GridItemType } from "../types";
-import { createCss } from "./createCss";
 
-const css: Css<GridItemType> = {
+export const css: Css<GridItemType> = {
   placeSelf: (v) => `place-self:${v};`,
   alignSelf: (v) => `align-self:${v};`,
   justifySelf: (v) => `justify-self:${v};`,
@@ -13,5 +12,3 @@ const css: Css<GridItemType> = {
   gridColumnEnd: (v) => `grid-column-end:${v};`,
   gridRowEnd: (v) => `grid-row-end:${v};`,
 };
-
-export const getGridItemCss = (p) => createCss(css, p);

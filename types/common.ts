@@ -1,3 +1,12 @@
+import {
+  ContainerType,
+  FlexItemType,
+  FlexType,
+  GridItemType,
+  GridType,
+  MediaQueries,
+} from ".";
+
 export type Gap = {
   gap?: string;
   columnGap?: string;
@@ -13,7 +22,20 @@ export type Breakpoints = {
   xl: number;
 };
 
+type ValidComponents =
+  | GridType
+  | GridItemType
+  | ContainerType
+  | FlexType
+  | FlexItemType;
+
 // T = any component type but not responsive type
-export type Css<T> = {
+export type Css<T extends ValidComponents> = {
   [key in keyof T]: (v: T[key]) => string;
 };
+
+export type CreateCss = (
+  css: Css<ValidComponents>,
+  p: any,
+  atMedia: MediaQueries
+) => string;

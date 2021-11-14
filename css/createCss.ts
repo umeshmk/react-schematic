@@ -1,5 +1,6 @@
 import { isDef, isNotObj, isObj } from "../helper";
-import { atMedia } from "../mediaQueries";
+import { CreateCss } from "../types";
+// import { atMedia } from "../mediaQueries";
 
 // p is all props of a component
 // p > css ---- more props to iterate.
@@ -27,13 +28,16 @@ const createValidMediaCss = (css, p, mediaKey) => {
     }
   });
 
-  return `${atMedia[mediaKey]} { ${mediaCss.join(";")} }`;
+  return mediaCss;
 };
 
-const createValidAllMediaCss = (css, p) =>
+const createValidAllMediaCss = (css, p, atMedia) =>
   Object.keys(atMedia)
-    .map((mediaKey) => createValidMediaCss(css, p, mediaKey))
+    .map((mediaKey) => {
+      const mediaCss = createValidMediaCss(css, p, mediaKey);
+      return `${atMedia[mediaKey]} { ${mediaCss.join(";")} }`;
+    })
     .join(";");
 
-export const createCss = (css, p) =>
-  createValidCss(css, p) + createValidAllMediaCss(css, p);
+export const createCss: CreateCss = (css, p, atMedia) =>
+  createValidCss(css, p) + createValidAllMediaCss(css, p, atMedia);

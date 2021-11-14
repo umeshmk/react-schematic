@@ -2,10 +2,9 @@
 // It will scale upwards to higher widths by default
 // @media screen and (min-width:1200px) { .... }
 
-import defaultValues from "./defaultValues";
 import { Breakpoints, MediaQueries } from "./types";
 
-const createMediaQueries = (breakpoints: Breakpoints) => {
+export const createMediaQueries = (breakpoints: Breakpoints) => {
   let mediaQueries: MediaQueries = {};
 
   if (Object.values(breakpoints)[0] !== 0)
@@ -17,5 +16,3 @@ const createMediaQueries = (breakpoints: Breakpoints) => {
 
   return mediaQueries;
 };
-
-export const atMedia = createMediaQueries(defaultValues.breakpoints);

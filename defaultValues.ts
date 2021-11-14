@@ -1,5 +1,6 @@
 // Must be (min-width) only.
 
+import { createMediaQueries } from "./mediaQueries";
 import { Breakpoints, MaxWidths } from "./types";
 
 // From material UI

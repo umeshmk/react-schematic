@@ -1,7 +1,6 @@
 import { Css, GridType } from "../types";
-import { createCss } from "./createCss";
 
-const css: Css<GridType> = {
+export const css: Css<GridType> = {
   display: (v) => `display:${v};`,
   grid: (v) => `grid:${v};`,
   gridTemplate: (v) => `grid-template :${v};`,
@@ -21,5 +20,3 @@ const css: Css<GridType> = {
   rowGap: (v) => `row-gap:${v};`,
   columnGap: (v) => `col-gap:${v};`,
 };
-
-export const getGridCss = (p) => createCss(css, p);

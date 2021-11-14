@@ -1,7 +1,6 @@
 import { Css, FlexType } from "../types";
-import { createCss } from "./createCss";
 
-const css: Css<FlexType> = {
+export const css: Css<FlexType> = {
   display: (v) => `display:${v};`,
   flexFlow: (v) => `flex-flow:${v};`,
   flexDirection: (v) => `flex-direction:${v};`,
@@ -13,5 +12,3 @@ const css: Css<FlexType> = {
   rowGap: (v) => `row-gap:${v};`,
   columnGap: (v) => `col-gap:${v};`,
 };
-
-export const getFlexCss = (p) => createCss(css, p);
