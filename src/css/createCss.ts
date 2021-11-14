@@ -18,13 +18,10 @@ const createValidCss = (css, p) =>
 // eg: prop={{ xs:'bar', md:'foo' }}
 const createValidMediaCss = (css, p, mediaKey) => {
   let mediaCss: string[] = Object.keys(css).map((key) => {
-    let prop = {
-      value: p[key],
-      mediaValue: p[key][mediaKey],
-    };
-
-    if (isObj(prop.value) && isDef(prop.mediaValue)) {
-      return css[key](prop.mediaValue);
+    const value = p[key];
+    if (isObj(value)) {
+      const mediaValue = value[mediaKey];
+      if (isDef(mediaValue)) return css[key](mediaValue);
     }
   });
 

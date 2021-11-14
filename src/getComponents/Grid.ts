@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {isUnDef} from '../../helper';
+import {isUnDef} from '../helper';
 import {createCss} from '../css/createCss';
 import {css} from '../css/GridCss';
 import {GridResponsiveType, MediaQueries} from '../types';

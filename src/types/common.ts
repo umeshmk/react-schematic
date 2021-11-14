@@ -15,7 +15,7 @@ export type Gap = {
 
 // 1st breakpoint will always be 0 - opinionated
 export type Breakpoints = {
-  xs: 0;
+  xs: number;
   sm: number;
   md: number;
   lg: number;
