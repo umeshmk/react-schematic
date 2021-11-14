@@ -1,13 +1,13 @@
-import defaultValues from "./defaultValues";
+import defaultValues from './defaultValues';
 import {
   getContainer,
   getFlex,
   getFlexItem,
   getGrid,
   getGridItem,
-} from "./getComponents";
-import { createMediaQueries } from "./mediaQueries";
-import { Breakpoints } from "./types";
+} from './getComponents';
+import {createMediaQueries} from './mediaQueries';
+import {Breakpoints} from './types';
 
 type ReactLayout = (breakpoints?: Breakpoints) => {
   Container: React.FC;

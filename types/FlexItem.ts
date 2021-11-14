@@ -9,10 +9,10 @@ export type FlexItemType = {
   flexShrink?: number;
   flexBasis?: string;
   alignSelf?:
-    | "auto"
-    | "flex-start"
-    | "flex-end"
-    | "center"
-    | "stretch"
-    | "baseline";
+    | 'auto'
+    | 'flex-start'
+    | 'flex-end'
+    | 'center'
+    | 'stretch'
+    | 'baseline';
 };

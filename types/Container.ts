@@ -6,4 +6,4 @@ export type MaxWidths = {
   xl: number;
 };
 
-export type ContainerType = { maxWidth?: keyof MaxWidths };
+export type ContainerType = {maxWidth?: keyof MaxWidths};

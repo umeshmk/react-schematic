@@ -1,5 +1,5 @@
-import { isDef, isNotObj, isObj } from "../helper";
-import { CreateCss } from "../types";
+import {isDef, isNotObj, isObj} from '../helper';
+import {CreateCss} from '../types';
 // import { atMedia } from "../mediaQueries";
 
 // p is all props of a component
@@ -13,7 +13,7 @@ const createValidCss = (css, p) =>
       let propValue = p[key];
       if (isDef(propValue) && isNotObj(propValue)) return css[key](propValue);
     })
-    .join(";");
+    .join(';');
 
 // eg: prop={{ xs:'bar', md:'foo' }}
 const createValidMediaCss = (css, p, mediaKey) => {
@@ -35,9 +35,9 @@ const createValidAllMediaCss = (css, p, atMedia) =>
   Object.keys(atMedia)
     .map((mediaKey) => {
       const mediaCss = createValidMediaCss(css, p, mediaKey);
-      return `${atMedia[mediaKey]} { ${mediaCss.join(";")} }`;
+      return `${atMedia[mediaKey]} { ${mediaCss.join(';')} }`;
     })
-    .join(";");
+    .join(';');
 
 export const createCss: CreateCss = (css, p, atMedia) =>
   createValidCss(css, p) + createValidAllMediaCss(css, p, atMedia);

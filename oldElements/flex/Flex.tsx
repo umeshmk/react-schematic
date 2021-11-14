@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { SFC } from "../../types";
+import styled, {css} from 'styled-components';
+import {SFC} from '../../types';
 
 type Media<T> = {
   xs?: T;
@@ -13,48 +13,48 @@ type Media<T> = {
 
 type Flex = {
   flexDirection?:
-    | "row"
-    | "column"
-    | "row-reverse"
-    | "column-reverse"
-    | "initial"
-    | "inherit";
-  wrap?: "wrap" | "nowrap" | "wrap-reverse" | "initial" | "inherit";
+    | 'row'
+    | 'column'
+    | 'row-reverse'
+    | 'column-reverse'
+    | 'initial'
+    | 'inherit';
+  wrap?: 'wrap' | 'nowrap' | 'wrap-reverse' | 'initial' | 'inherit';
   alignItems?:
-    | "flex-start"
-    | "flex-end"
-    | "center"
-    | "stretch"
-    | "baseline"
-    | "initial"
-    | "inherit";
+    | 'flex-start'
+    | 'flex-end'
+    | 'center'
+    | 'stretch'
+    | 'baseline'
+    | 'initial'
+    | 'inherit';
   alignContent?:
-    | "flex-start"
-    | "flex-end"
-    | "center"
-    | "stretch"
-    | "space-around"
-    | "space-between"
-    | "initial"
-    | "inherit";
+    | 'flex-start'
+    | 'flex-end'
+    | 'center'
+    | 'stretch'
+    | 'space-around'
+    | 'space-between'
+    | 'initial'
+    | 'inherit';
   justifyContent?:
-    | "flex-start"
-    | "flex-end"
-    | "center"
-    | "space-around"
-    | "space-between"
-    | "space-evenly"
-    | "initial"
-    | "inherit";
+    | 'flex-start'
+    | 'flex-end'
+    | 'center'
+    | 'space-around'
+    | 'space-between'
+    | 'space-evenly'
+    | 'initial'
+    | 'inherit';
 };
 
 // RESPONSIVE
 type FlexResponsive = {
-  direction?: Flex["flexDirection"] | Media<Flex["flexDirection"]>;
-  wrap?: Flex["wrap"] | Media<Flex["wrap"]>;
-  alignItems?: Flex["alignItems"] | Media<Flex["alignItems"]>;
-  alignContent?: Flex["alignContent"] | Media<Flex["alignContent"]>;
-  justifyContent?: Flex["justifyContent"] | Media<Flex["justifyContent"]>;
+  direction?: Flex['flexDirection'] | Media<Flex['flexDirection']>;
+  wrap?: Flex['wrap'] | Media<Flex['wrap']>;
+  alignItems?: Flex['alignItems'] | Media<Flex['alignItems']>;
+  alignContent?: Flex['alignContent'] | Media<Flex['alignContent']>;
+  justifyContent?: Flex['justifyContent'] | Media<Flex['justifyContent']>;
 };
 
 const getFlexCss = (p: Flex) => {
@@ -69,7 +69,7 @@ const getFlexCss = (p: Flex) => {
 
 // Use Body instead of .div else we see direction="[Object Object]" in chrome devtools
 // export const Flex = styled.div<FlexResponsive>`
-const Body: SFC<FlexResponsive> = ({ className, children }) => {
+const Body: SFC<FlexResponsive> = ({className, children}) => {
   return <div className={className}>{children}</div>;
 };
 
@@ -79,13 +79,13 @@ export const Flex = styled(Body)`
   /* all media */
   ${(p) =>
     getFlexCss({
-      flexDirection: typeof p.direction === "string" ? p.direction : undefined,
-      wrap: typeof p.wrap === "string" ? p.wrap : undefined,
+      flexDirection: typeof p.direction === 'string' ? p.direction : undefined,
+      wrap: typeof p.wrap === 'string' ? p.wrap : undefined,
       justifyContent:
-        typeof p.justifyContent === "string" ? p.justifyContent : undefined,
+        typeof p.justifyContent === 'string' ? p.justifyContent : undefined,
       alignContent:
-        typeof p.alignContent === "string" ? p.alignContent : undefined,
-      alignItems: typeof p.alignItems === "string" ? p.alignItems : undefined,
+        typeof p.alignContent === 'string' ? p.alignContent : undefined,
+      alignItems: typeof p.alignItems === 'string' ? p.alignItems : undefined,
     })}
 
   // media - xs
@@ -93,16 +93,16 @@ export const Flex = styled(Body)`
     ${(p) =>
       getFlexCss({
         flexDirection:
-          typeof p.direction === "object" ? p.direction.xs : undefined,
-        wrap: typeof p.wrap === "object" ? p.wrap.xs : undefined,
+          typeof p.direction === 'object' ? p.direction.xs : undefined,
+        wrap: typeof p.wrap === 'object' ? p.wrap.xs : undefined,
         justifyContent:
-          typeof p.justifyContent === "object"
+          typeof p.justifyContent === 'object'
             ? p.justifyContent.xs
             : undefined,
         alignContent:
-          typeof p.alignContent === "object" ? p.alignContent.xs : undefined,
+          typeof p.alignContent === 'object' ? p.alignContent.xs : undefined,
         alignItems:
-          typeof p.alignItems === "object" ? p.alignItems.xs : undefined,
+          typeof p.alignItems === 'object' ? p.alignItems.xs : undefined,
       })}
   }
   // media - md
@@ -110,16 +110,16 @@ export const Flex = styled(Body)`
     ${(p) => {
       return getFlexCss({
         flexDirection:
-          typeof p.direction === "object" ? p.direction.md : undefined,
-        wrap: typeof p.wrap === "object" ? p.wrap.md : undefined,
+          typeof p.direction === 'object' ? p.direction.md : undefined,
+        wrap: typeof p.wrap === 'object' ? p.wrap.md : undefined,
         justifyContent:
-          typeof p.justifyContent === "object"
+          typeof p.justifyContent === 'object'
             ? p.justifyContent.md
             : undefined,
         alignContent:
-          typeof p.alignContent === "object" ? p.alignContent.md : undefined,
+          typeof p.alignContent === 'object' ? p.alignContent.md : undefined,
         alignItems:
-          typeof p.alignItems === "object" ? p.alignItems.md : undefined,
+          typeof p.alignItems === 'object' ? p.alignItems.md : undefined,
       });
     }}
   }
@@ -129,16 +129,16 @@ export const Flex = styled(Body)`
     ${(p) => {
       return getFlexCss({
         flexDirection:
-          typeof p.direction === "object" ? p.direction.lg : undefined,
-        wrap: typeof p.wrap === "object" ? p.wrap.lg : undefined,
+          typeof p.direction === 'object' ? p.direction.lg : undefined,
+        wrap: typeof p.wrap === 'object' ? p.wrap.lg : undefined,
         justifyContent:
-          typeof p.justifyContent === "object"
+          typeof p.justifyContent === 'object'
             ? p.justifyContent.lg
             : undefined,
         alignContent:
-          typeof p.alignContent === "object" ? p.alignContent.lg : undefined,
+          typeof p.alignContent === 'object' ? p.alignContent.lg : undefined,
         alignItems:
-          typeof p.alignItems === "object" ? p.alignItems.lg : undefined,
+          typeof p.alignItems === 'object' ? p.alignItems.lg : undefined,
       });
     }}
   }

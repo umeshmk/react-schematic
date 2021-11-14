@@ -1,4 +1,4 @@
-import { Css, FlexType } from "../types";
+import {Css, FlexType} from '../types';
 
 export const css: Css<FlexType> = {
   display: (v) => `display:${v};`,

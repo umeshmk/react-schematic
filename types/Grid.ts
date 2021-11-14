@@ -1,7 +1,7 @@
-import { Gap } from "./common";
+import {Gap} from './common';
 
 type Basic = {
-  display?: "grid" | "inline-grid";
+  display?: 'grid' | 'inline-grid';
   grid?: string; // short for template & auto
 };
 
@@ -14,32 +14,32 @@ type Template = {
 
 type PlaceItems = {
   placeItems?: string; // <align-items> / <justify-items>
-  justifyItems?: "start" | "end" | "center" | "stretch";
-  alignItems?: "start" | "end" | "center" | "stretch";
+  justifyItems?: 'start' | 'end' | 'center' | 'stretch';
+  alignItems?: 'start' | 'end' | 'center' | 'stretch';
 };
 
 type PlaceContent = {
   placeContent?: string; // <align-content> / <justify-content>
   justifyContent?:
-    | "start"
-    | "end"
-    | "center"
-    | "stretch"
-    | "space-around"
-    | "space-between"
-    | "space-evenly";
+    | 'start'
+    | 'end'
+    | 'center'
+    | 'stretch'
+    | 'space-around'
+    | 'space-between'
+    | 'space-evenly';
   alignContent?:
-    | "start"
-    | "end"
-    | "center"
-    | "stretch"
-    | "space-around"
-    | "space-between"
-    | "space-evenly";
+    | 'start'
+    | 'end'
+    | 'center'
+    | 'stretch'
+    | 'space-around'
+    | 'space-between'
+    | 'space-evenly';
 };
 
 type Auto = {
-  gridAutoFlow?: "row" | "column" | "row dense" | "column dense";
+  gridAutoFlow?: 'row' | 'column' | 'row dense' | 'column dense';
   gridAutoRows?: string;
   gridAutoColumns?: string;
 };

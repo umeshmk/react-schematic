@@ -1,6 +1,6 @@
 # React-Layout (Development package)
 
-## Naming
+<!-- ## Naming
 
 ```tsx
 Container :  <Container> <Flex> <Grid>
@@ -42,3 +42,6 @@ _Not strict though_
 - No extra global theme just use default styled components theme
 - Responsive breakpoints as per your requirements (Only values not keys)
 - Naming too like **xs** or **mobile**
+
+
+-->

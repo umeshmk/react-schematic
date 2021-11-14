@@ -1,31 +1,31 @@
-import { Gap } from "./common";
+import {Gap} from './common';
 
 type Basic = {
-  display?: "flex" | "inline-flex";
+  display?: 'flex' | 'inline-flex';
   flexFlow?: string;
-  flexDirection?: "row" | "column" | "row-reverse" | "column-reverse";
-  wrap?: "wrap" | "nowrap" | "wrap-reverse";
+  flexDirection?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
+  wrap?: 'wrap' | 'nowrap' | 'wrap-reverse';
 };
-type AlignItems = "flex-start" | "flex-end" | "center" | "stretch" | "baseline";
+type AlignItems = 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline';
 
 type AlignContent =
-  | "normal"
-  | "flex-start"
-  | "flex-end"
-  | "center"
-  | "stretch"
-  | "baseline"
-  | "space-around"
-  | "space-evenly"
-  | "space-between";
+  | 'normal'
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'stretch'
+  | 'baseline'
+  | 'space-around'
+  | 'space-evenly'
+  | 'space-between';
 
 type JustifyContent =
-  | "flex-start"
-  | "flex-end"
-  | "center"
-  | "space-around"
-  | "space-between"
-  | "space-evenly";
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'space-around'
+  | 'space-between'
+  | 'space-evenly';
 
 /**
  * FLEX

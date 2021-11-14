@@ -1,9 +1,9 @@
-import { Breakpoints } from ".";
-import { ContainerType } from "./Container";
-import { FlexType } from "./Flex";
-import { FlexItemType } from "./FlexItem";
-import { GridType } from "./Grid";
-import { GridItemType } from "./GridItem";
+import {Breakpoints} from '.';
+import {ContainerType} from './Container';
+import {FlexType} from './Flex';
+import {FlexItemType} from './FlexItem';
+import {GridType} from './Grid';
+import {GridItemType} from './GridItem';
 
 type Media<T> = {
   [key in keyof Breakpoints]?: T;

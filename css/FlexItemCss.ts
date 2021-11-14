@@ -1,4 +1,4 @@
-import { Css, FlexItemType } from "../types";
+import {Css, FlexItemType} from '../types';
 
 export const css: Css<FlexItemType> = {
   flex: (v) => `flex:${v};`,

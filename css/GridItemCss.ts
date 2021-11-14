@@ -1,4 +1,4 @@
-import { Css, GridItemType } from "../types";
+import {Css, GridItemType} from '../types';
 
 export const css: Css<GridItemType> = {
   placeSelf: (v) => `place-self:${v};`,

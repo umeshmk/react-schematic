@@ -5,7 +5,7 @@ import {
   GridItemType,
   GridType,
   MediaQueries,
-} from ".";
+} from '.';
 
 export type Gap = {
   gap?: string;

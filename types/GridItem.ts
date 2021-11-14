@@ -10,8 +10,8 @@ type Area = {
 
 type PlaceSelf = {
   placeSelf?: string; // <align-Self> / <justify-Self>
-  justifySelf?: "start" | "end" | "center" | "stretch";
-  alignSelf?: "start" | "end" | "center" | "stretch";
+  justifySelf?: 'start' | 'end' | 'center' | 'stretch';
+  alignSelf?: 'start' | 'end' | 'center' | 'stretch';
 };
 
 /**

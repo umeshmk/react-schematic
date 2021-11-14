@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { SFC } from "../types";
+import styled, {css} from 'styled-components';
+import {SFC} from '../types';
 
 type Media = {
   xs?: string;
@@ -11,13 +11,13 @@ type Media = {
  * GRID CONTAINER
  */
 type Content =
-  | "normal"
-  | "center"
-  | "start"
-  | "end"
-  | "space-evenly"
-  | "space-between"
-  | "space-around";
+  | 'normal'
+  | 'center'
+  | 'start'
+  | 'end'
+  | 'space-evenly'
+  | 'space-between'
+  | 'space-around';
 
 type MediaContent = {
   xs?: Content;
@@ -60,7 +60,7 @@ const getGridCss = (p: Grid) => {
 
 // Container
 // export const Grid = styled.div<GridResponsive>`
-const Body: SFC<GridResponsive> = ({ className, children }) => {
+const Body: SFC<GridResponsive> = ({className, children}) => {
   return <div className={className}>{children}</div>;
 };
 
@@ -70,32 +70,32 @@ export const Grid = styled(Body)`
   // all media
   ${(p) =>
     getGridCss({
-      rows: typeof p.rows === "string" ? p.rows : undefined,
-      cols: typeof p.cols === "string" ? p.cols : undefined,
+      rows: typeof p.rows === 'string' ? p.rows : undefined,
+      cols: typeof p.cols === 'string' ? p.cols : undefined,
       justifyContent:
-        typeof p.justifyContent === "string" ? p.justifyContent : undefined,
+        typeof p.justifyContent === 'string' ? p.justifyContent : undefined,
       alignContent:
-        typeof p.alignContent === "string" ? p.alignContent : undefined,
-      gap: typeof p.gap === "string" ? p.gap : undefined,
-      colGap: typeof p.colGap === "string" ? p.colGap : undefined,
-      rowGap: typeof p.rowGap === "string" ? p.rowGap : undefined,
+        typeof p.alignContent === 'string' ? p.alignContent : undefined,
+      gap: typeof p.gap === 'string' ? p.gap : undefined,
+      colGap: typeof p.colGap === 'string' ? p.colGap : undefined,
+      rowGap: typeof p.rowGap === 'string' ? p.rowGap : undefined,
     })}
 
   // media - xs
   ${(p) => p.theme.media.xs} {
     ${(p) =>
       getGridCss({
-        rows: typeof p.rows === "object" ? p.rows.xs : undefined,
-        cols: typeof p.cols === "object" ? p.cols.xs : undefined,
+        rows: typeof p.rows === 'object' ? p.rows.xs : undefined,
+        cols: typeof p.cols === 'object' ? p.cols.xs : undefined,
         justifyContent:
-          typeof p.justifyContent === "object"
+          typeof p.justifyContent === 'object'
             ? p.justifyContent.xs
             : undefined,
         alignContent:
-          typeof p.alignContent === "object" ? p.alignContent.xs : undefined,
-        gap: typeof p.gap === "object" ? p.gap.xs : undefined,
-        colGap: typeof p.colGap === "object" ? p.colGap.xs : undefined,
-        rowGap: typeof p.rowGap === "object" ? p.rowGap.xs : undefined,
+          typeof p.alignContent === 'object' ? p.alignContent.xs : undefined,
+        gap: typeof p.gap === 'object' ? p.gap.xs : undefined,
+        colGap: typeof p.colGap === 'object' ? p.colGap.xs : undefined,
+        rowGap: typeof p.rowGap === 'object' ? p.rowGap.xs : undefined,
       })}
   }
 
@@ -103,17 +103,17 @@ export const Grid = styled(Body)`
   ${(p) => p.theme.media.md} {
     ${(p) =>
       getGridCss({
-        rows: typeof p.rows === "object" ? p.rows.md : undefined,
-        cols: typeof p.cols === "object" ? p.cols.md : undefined,
+        rows: typeof p.rows === 'object' ? p.rows.md : undefined,
+        cols: typeof p.cols === 'object' ? p.cols.md : undefined,
         justifyContent:
-          typeof p.justifyContent === "object"
+          typeof p.justifyContent === 'object'
             ? p.justifyContent.md
             : undefined,
         alignContent:
-          typeof p.alignContent === "object" ? p.alignContent.md : undefined,
-        gap: typeof p.gap === "object" ? p.gap.md : undefined,
-        colGap: typeof p.colGap === "object" ? p.colGap.md : undefined,
-        rowGap: typeof p.rowGap === "object" ? p.rowGap.md : undefined,
+          typeof p.alignContent === 'object' ? p.alignContent.md : undefined,
+        gap: typeof p.gap === 'object' ? p.gap.md : undefined,
+        colGap: typeof p.colGap === 'object' ? p.colGap.md : undefined,
+        rowGap: typeof p.rowGap === 'object' ? p.rowGap.md : undefined,
       })}
   }
 
@@ -121,17 +121,17 @@ export const Grid = styled(Body)`
   ${(p) => p.theme.media.lg} {
     ${(p) =>
       getGridCss({
-        rows: typeof p.rows === "object" ? p.rows.lg : undefined,
-        cols: typeof p.cols === "object" ? p.cols.lg : undefined,
+        rows: typeof p.rows === 'object' ? p.rows.lg : undefined,
+        cols: typeof p.cols === 'object' ? p.cols.lg : undefined,
         justifyContent:
-          typeof p.justifyContent === "object"
+          typeof p.justifyContent === 'object'
             ? p.justifyContent.lg
             : undefined,
         alignContent:
-          typeof p.alignContent === "object" ? p.alignContent.lg : undefined,
-        gap: typeof p.gap === "object" ? p.gap.lg : undefined,
-        colGap: typeof p.colGap === "object" ? p.colGap.lg : undefined,
-        rowGap: typeof p.rowGap === "object" ? p.rowGap.lg : undefined,
+          typeof p.alignContent === 'object' ? p.alignContent.lg : undefined,
+        gap: typeof p.gap === 'object' ? p.gap.lg : undefined,
+        colGap: typeof p.colGap === 'object' ? p.colGap.lg : undefined,
+        rowGap: typeof p.rowGap === 'object' ? p.rowGap.lg : undefined,
       })}
   }
 `;
@@ -157,7 +157,7 @@ const getItemCss = (p: Item) => {
 
 // Item
 // export const GridItem = styled.div<ItemResponsive>`
-const ItemBody: SFC<ItemResponsive> = ({ className, children }) => {
+const ItemBody: SFC<ItemResponsive> = ({className, children}) => {
   return <div className={className}>{children}</div>;
 };
 
@@ -165,16 +165,16 @@ export const GridItem = styled(ItemBody)`
   // all media
   ${(p) =>
     getItemCss({
-      gridCol: typeof p.gridCol === "string" ? p.gridCol : undefined,
-      gridRow: typeof p.gridRow === "string" ? p.gridRow : undefined,
+      gridCol: typeof p.gridCol === 'string' ? p.gridCol : undefined,
+      gridRow: typeof p.gridRow === 'string' ? p.gridRow : undefined,
     })}
 
   // media - xs
   ${(p) => p.theme.media.xs} {
     ${(p) =>
       getItemCss({
-        gridCol: typeof p.gridCol === "object" ? p.gridCol.xs : undefined,
-        gridRow: typeof p.gridRow === "object" ? p.gridRow.xs : undefined,
+        gridCol: typeof p.gridCol === 'object' ? p.gridCol.xs : undefined,
+        gridRow: typeof p.gridRow === 'object' ? p.gridRow.xs : undefined,
       })}
   }
 
@@ -182,8 +182,8 @@ export const GridItem = styled(ItemBody)`
   ${(p) => p.theme.media.md} {
     ${(p) =>
       getItemCss({
-        gridCol: typeof p.gridCol === "object" ? p.gridCol.md : undefined,
-        gridRow: typeof p.gridRow === "object" ? p.gridRow.md : undefined,
+        gridCol: typeof p.gridCol === 'object' ? p.gridCol.md : undefined,
+        gridRow: typeof p.gridRow === 'object' ? p.gridRow.md : undefined,
       })}
   }
 
@@ -191,8 +191,8 @@ export const GridItem = styled(ItemBody)`
   ${(p) => p.theme.media.lg} {
     ${(p) =>
       getItemCss({
-        gridCol: typeof p.gridCol === "object" ? p.gridCol.lg : undefined,
-        gridRow: typeof p.gridRow === "object" ? p.gridRow.lg : undefined,
+        gridCol: typeof p.gridCol === 'object' ? p.gridCol.lg : undefined,
+        gridRow: typeof p.gridRow === 'object' ? p.gridRow.lg : undefined,
       })}
   }
 `;

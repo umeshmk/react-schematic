@@ -1,4 +1,4 @@
-import { Css, GridType } from "../types";
+import {Css, GridType} from '../types';
 
 export const css: Css<GridType> = {
   display: (v) => `display:${v};`,
