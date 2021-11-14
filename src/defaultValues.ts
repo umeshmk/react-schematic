@@ -12,15 +12,15 @@ let breakpoints: Breakpoints = {
 };
 
 // for Container
-export let maxWidths: MaxWidths = {
+export let getMaxWidths: (b: Breakpoints) => MaxWidths = (b) => ({
   // xs: 0,
-  sm: 600,
-  md: 900,
-  lg: 1200,
-  xl: 1536,
-};
+  sm: b.sm,
+  md: b.md,
+  lg: b.lg,
+  xl: b.xl,
+});
 
 export default {
   breakpoints,
-  maxWidths,
+  getMaxWidths,
 };

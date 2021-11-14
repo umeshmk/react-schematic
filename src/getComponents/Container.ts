@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-import {css} from '../css/ContainerCss';
+import {getCss} from '../css/ContainerCss';
 import {createCss} from '../css/createCss';
 import {isUnDef} from '../helper';
-import {ContainerResponsiveType, MediaQueries} from '../types';
+import {ContainerResponsiveType, MaxWidths, MediaQueries} from '../types';
 
-export const getContainer = (atMedia: MediaQueries) => {
+export const getContainer = (atMedia: MediaQueries, maxWidths: MaxWidths) => {
+  const css = getCss(maxWidths);
   const Container = styled.div<ContainerResponsiveType>`
     margin: 0 auto;
 

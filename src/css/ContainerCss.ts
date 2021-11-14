@@ -1,7 +1,10 @@
-import defaultValues from '../defaultValues';
-import {ContainerType, Css} from '../types';
+import {ContainerType, Css, MaxWidths} from '../types';
 
-export const css: Css<ContainerType> = {
-  // key = xs,sm,md....
-  maxWidth: (key) => `max-width: ${defaultValues.maxWidths[key]}px;`,
+export const getCss = (maxWidths: MaxWidths) => {
+  const css: Css<ContainerType> = {
+    // key = xs,sm,md....
+    maxWidth: (key) => `max-width: ${maxWidths[key]}px;`,
+  };
+
+  return css;
 };

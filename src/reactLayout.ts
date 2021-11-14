@@ -1,4 +1,4 @@
-import defaultValues from './defaultValues';
+import defaultValues, {getMaxWidths} from './defaultValues';
 import {
   getContainer,
   getFlex,
@@ -21,9 +21,10 @@ export const reactLayout: ReactLayout = (
   breakpoints = defaultValues.breakpoints
 ) => {
   const atMedia = createMediaQueries(breakpoints);
+  const maxWidth = getMaxWidths(breakpoints);
 
   return {
-    Container: getContainer(atMedia),
+    Container: getContainer(atMedia, maxWidth),
     Grid: getGrid(atMedia),
     GridItem: getGridItem(atMedia),
     Flex: getFlex(atMedia),
