@@ -2,10 +2,8 @@
   "name": "react-layout",
   "version": "1.0.0",
   "description": "Create responsive Container, Grid & Flex components with custom breakpoints for your react project",
-  "main": "index.js",
-  "scripts": {
-    "prettier": "prettier */**/*.{js,ts,jsx,tsx} --write"
-  },
+  "main": "src/index.ts",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/umeshmk/react-layout.git"
@@ -31,7 +29,6 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.15",
-    "prettier": "^2.4.1"
+    "@types/styled-components": "^5.1.15"
   }
 }

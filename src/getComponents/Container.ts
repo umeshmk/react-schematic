@@ -5,7 +5,7 @@ import {isUnDef} from '../helper';
 import {ContainerResponsiveType, MediaQueries} from '../types';
 
 export const getContainer = (atMedia: MediaQueries) => {
-  const Container = styled.section<ContainerResponsiveType>`
+  const Container = styled.div<ContainerResponsiveType>`
     margin: 0 auto;
 
     ${(p) => isUnDef(p.maxWidth) && 'max-width:100vw;'}

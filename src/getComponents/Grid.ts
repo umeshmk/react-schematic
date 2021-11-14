@@ -1,7 +1,7 @@
 import styled from 'styled-components';
+import {isUnDef} from '../../helper';
 import {createCss} from '../css/createCss';
 import {css} from '../css/GridCss';
-import {isUnDef} from '../helper';
 import {GridResponsiveType, MediaQueries} from '../types';
 
 export const getGrid = (atMedia: MediaQueries) => {

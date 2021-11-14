@@ -1,7 +1,7 @@
 import styled from 'styled-components';
+import {isUnDef} from '../../helper';
 import {createCss} from '../css/createCss';
 import {css} from '../css/FlexCss';
-import {isUnDef} from '../helper';
 import {FlexResponsiveType, MediaQueries} from '../types';
 
 export const getFlex = (atMedia: MediaQueries) => {
