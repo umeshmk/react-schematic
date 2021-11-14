@@ -10,11 +10,11 @@ import {createMediaQueries} from './mediaQueries';
 import {Breakpoints} from './types';
 
 type ReactLayout = (breakpoints?: Breakpoints) => {
-  Container: React.FC;
-  Grid: React.FC;
-  GridItem: React.FC;
-  Flex: React.FC;
-  FlexItem: React.FC;
+  Container: ReturnType<typeof getContainer>;
+  Grid: ReturnType<typeof getGrid>;
+  GridItem: ReturnType<typeof getGridItem>;
+  Flex: ReturnType<typeof getFlex>;
+  FlexItem: ReturnType<typeof getFlexItem>;
 };
 
 export const reactLayout: ReactLayout = (
