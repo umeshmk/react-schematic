@@ -1,1 +1,2 @@
-export { reactLayout } from "./reactLayout";
+export {reactLayout} from './reactLayout';
+export * from './types';

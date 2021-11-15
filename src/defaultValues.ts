@@ -3,7 +3,7 @@
 import {Breakpoints, MaxWidths} from './types';
 
 // From material UI
-let breakpoints: Breakpoints = {
+export let breakpoints: Breakpoints = {
   xs: 0,
   sm: 600,
   md: 900,
@@ -19,8 +19,3 @@ export let getMaxWidths: (b: Breakpoints) => MaxWidths = (b) => ({
   lg: b.lg,
   xl: b.xl,
 });
-
-export default {
-  breakpoints,
-  getMaxWidths,
-};

@@ -22,6 +22,7 @@ function App() {
             <li>Typed</li>
             <li>Themeless</li>
             <li>Styled Component</li>
+            <li>Css Named Props</li>
           </ul>
         </div>
 
