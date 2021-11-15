@@ -1,19 +1,20 @@
 // Public documentation
-// show only selected and needed docs
 
+// show only selected and needed docs
+export {breakpoints} from '../defaultValues';
 export {reactLayout} from '../reactLayout';
 export type {
   Breakpoints,
-  ContainerType,
-  FlexItemType,
-  FlexType,
-  GridItemType,
-  GridType,
   ContainerResponsiveType,
+  ContainerType,
   FlexItemResponsiveType,
+  FlexItemType,
   FlexResponsiveType,
+  FlexType,
   GridItemResponsiveType,
+  GridItemType,
   GridResponsiveType,
-  Media,
+  GridType,
   MaxWidths,
+  Media,
 } from '../types';

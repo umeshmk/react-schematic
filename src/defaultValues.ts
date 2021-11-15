@@ -3,7 +3,7 @@
 import {Breakpoints, MaxWidths} from './types';
 
 // From material UI
-export let breakpoints: Breakpoints = {
+export const breakpoints: Breakpoints = {
   xs: 0,
   sm: 600,
   md: 900,

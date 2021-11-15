@@ -2,7 +2,7 @@ export type FlexType = {
   display?: 'flex' | 'inline-flex';
   flexFlow?: string;
   flexDirection?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
-  wrap?: 'wrap' | 'nowrap' | 'wrap-reverse';
+  flexWrap?: 'wrap' | 'nowrap' | 'wrap-reverse';
   alignItems?: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline';
   alignContent?:
     | 'normal'

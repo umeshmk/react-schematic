@@ -4,3 +4,5 @@ dist
 dist-ssr
 *.local
 packageSt.json
+docs
+test-folder/vite

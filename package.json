@@ -4,7 +4,7 @@
   "description": "Create responsive Container, Grid & Flex components with custom breakpoints for your react project",
   "main": "src/index.ts",
   "scripts": {
-    "docs": "typedoc src/typeDoc/index.ts --out docs"
+    "docs": "typedoc src/typeDoc/index.ts --out test-folder/vite/public/docs"
   },
   "repository": {
     "type": "git",
