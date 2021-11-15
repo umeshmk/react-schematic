@@ -7,12 +7,6 @@ import {
   MediaQueries,
 } from '.';
 
-export type Gap = {
-  gap?: string;
-  columnGap?: string;
-  rowGap?: string;
-};
-
 // 1st breakpoint will always be 0 - opinionated
 export type Breakpoints = {
   xs: number;
@@ -22,7 +16,7 @@ export type Breakpoints = {
   xl: number;
 };
 
-type ValidComponents =
+export type ValidComponents =
   | GridType
   | GridItemType
   | ContainerType

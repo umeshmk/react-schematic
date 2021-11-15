@@ -1,24 +1,20 @@
-import {Gap} from './common';
-
-type Basic = {
+export type GridType = {
+  // type Basic
   display?: 'grid' | 'inline-grid';
   grid?: string; // short for template & auto
-};
 
-type Template = {
+  // type Template
   gridTemplate?: string;
   gridTemplateAreas?: string;
   gridTemplateColumns?: string;
   gridTemplateRows?: string;
-};
 
-type PlaceItems = {
+  // type PlaceItems
   placeItems?: string; // <align-items> / <justify-items>
   justifyItems?: 'start' | 'end' | 'center' | 'stretch';
   alignItems?: 'start' | 'end' | 'center' | 'stretch';
-};
 
-type PlaceContent = {
+  // type PlaceContent
   placeContent?: string; // <align-content> / <justify-content>
   justifyContent?:
     | 'start'
@@ -36,20 +32,14 @@ type PlaceContent = {
     | 'space-around'
     | 'space-between'
     | 'space-evenly';
-};
 
-type Auto = {
+  // type Auto
   gridAutoFlow?: 'row' | 'column' | 'row dense' | 'column dense';
   gridAutoRows?: string;
   gridAutoColumns?: string;
-};
 
-/**
- * GRID CONTAINER
- */
-export type GridType = Basic &
-  Template &
-  PlaceItems &
-  PlaceContent &
-  Auto &
-  Gap;
+  // type Gap
+  gap?: string;
+  columnGap?: string;
+  rowGap?: string;
+};

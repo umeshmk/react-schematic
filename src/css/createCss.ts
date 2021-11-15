@@ -7,6 +7,7 @@ import {CreateCss} from '../types';
 // so iterate over css is faster
 
 // eg: prop='foo'
+// @ts-ignore
 const createValidCss = (css, p) =>
   Object.keys(css)
     .map((key) => {
@@ -16,6 +17,7 @@ const createValidCss = (css, p) =>
     .join(';');
 
 // eg: prop={{ xs:'bar', md:'foo' }}
+// @ts-ignore
 const createValidMediaCss = (css, p, mediaKey) => {
   let mediaCss: string[] = Object.keys(css).map((key) => {
     const value = p[key];
@@ -28,6 +30,7 @@ const createValidMediaCss = (css, p, mediaKey) => {
   return mediaCss;
 };
 
+// @ts-ignore
 const createValidAllMediaCss = (css, p, atMedia) =>
   Object.keys(atMedia)
     .map((mediaKey) => {

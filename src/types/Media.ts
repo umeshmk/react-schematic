@@ -5,7 +5,7 @@ import {FlexItemType} from './FlexItem';
 import {GridType} from './Grid';
 import {GridItemType} from './GridItem';
 
-type Media<T> = {
+export type Media<T> = {
   [key in keyof Breakpoints]?: T;
 };
 

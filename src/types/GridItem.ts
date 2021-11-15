@@ -1,4 +1,5 @@
-type Area = {
+export type GridItemType = {
+  // type Area
   gridArea?: string;
   gridColumn?: string;
   gridRow?: string;
@@ -6,15 +7,9 @@ type Area = {
   gridRowStart?: string;
   gridColumnEnd?: string;
   gridRowEnd?: string;
-};
 
-type PlaceSelf = {
+  // type PlaceSelf
   placeSelf?: string; // <align-Self> / <justify-Self>
   justifySelf?: 'start' | 'end' | 'center' | 'stretch';
   alignSelf?: 'start' | 'end' | 'center' | 'stretch';
 };
-
-/**
- * GRID ITEM
- */
-export type GridItemType = Area & PlaceSelf;
