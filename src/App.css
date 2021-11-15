@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #222;
+  padding: 5rem 0;
+  font-weight: 300;
+  font-family: 'Roboto';
+}
+.codebox {
+  /* padding-bottom: 2rem; */
+}
+.title {
+  text-align: center;
+  font-size: 5rem;
+  color: gold;
+  font-family: serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: 'Praise', cursive;
+  /* background-color: #000; */
+  /* margin-bottom: 5rem; */
+  /* padding: 2rem; */
+}
+.title.example {
+  margin-top: 15rem;
+}
+.title.code {
+  margin: 5rem;
+  margin-top: 10rem;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2rem;
+}
+nav .bars,
+nav .close {
+  display: none;
+}
+nav a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: lightblue;
+  color: lightcoral;
+  /* text-transform: uppercase; */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 900px) {
+  nav {
+    /* position: relative; */
+    padding: 0;
+  }
+  nav .links-md {
+    display: none;
+  }
+  nav .modal-xs {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 0.3s ease;
+    /* transition: all 2s; */
+  }
+  nav a {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  nav .bars,
+  nav .close {
+    display: block;
+    /* color: lightblue; */
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+    letter-spacing: 2px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  nav .close {
+    position: fixed;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+}
+pre {
+  border: 5px solid gold;
+  font-size: 1.25rem;
+  color: aliceblue;
+  background-color: #222;
+  margin-bottom: 5rem;
+  /* padding: 2rem; */
+}
+pre code {
+  /* padding: 2rem; */
+}
+
+.features .ul {
+  /* font-family: 'Praise', cursive; */
+  list-style: none;
+  /* color: palevioletred; */
+  color: yellowgreen;
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #333;
+  color: goldenrod;
+  /* font-size: 0.8rem; */
+  min-height: 100vh;
+  padding: 2rem;
+  margin-top: 7rem !important;
+  margin-bottom: 7rem !important;
+  display: flex;
+  border: 2px dashed;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 300;
+}
+/* .gridH1, */
+/* .flexH1 { */
+.container h1 {
+  background-color: #333;
+  margin: 5rem 0 0;
+  padding: 1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.container h3 {
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.grid {
+  background-color: #333;
+  padding: 2rem;
+  border: 2px dashed;
+}
+.grid > div {
+  background-color: #444;
+  padding: 2rem;
+}
+.flex {
+  background-color: #333;
+  padding: 2rem;
+  border: 2px dashed;
+}
+.flex > div {
+  background-color: #444;
+  padding: 2rem;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>react-layout</title><meta name="description" content="Documentation for react-layout"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">react-layout</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>react-layout</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#react-layout-development-package" id="react-layout-development-package" style="color: inherit; text-decoration: none;">
+  <h1>React-Layout (Development package)</h1>
+</a>
+<!-- ## Naming
+
+```tsx
+Container :  <Container> <Flex> <Grid>
+Item      :  <Flex> <Grid> with boolean props "isFlexItem" / "isGridItem"
+
+Types :
+<> = styled component
+props = Options | Media<Options>   // where Options are different for each props
+Media<T> = {xs: T, md: T , lg:T}
+
+<BaseContainer>    maxWidth
+<BaseGrid>         cols rows gap
+<BaseFlex>         direction
+<BaseItem>         // Not needed use <Flex>/<Grid> as container & child together to avoid more nested components
+    <Flex isGridItem > OR  <Flex isFlexItem >
+    <Grid isGridItem > OR  <Grid isFlexItem >
+
+
+
+
+```
+
+## Opinionated
+
+_Not strict though_
+
+- Based on styled components
+- Use this components for just layouts on different media sizes
+  - layouts - `display, position`
+  - `margin, padding `
+- Import first, then Install with breakpoints object and reexport as element/Grid etc
+- Never use grid/flex Items instead use grid/flex containers with boolean props `isFlexItem / isGridItem` . This avoids too much nested components.
+- Breakpoints for Media queries - Must be (min-width) only. It will scale upwards to higher widths by default.
+- Responsive breakpoints - predefined keys - `xs,sm,md,lg,xl`
+- First key in breakpoints - value must always be `<key>:0`
+
+## Unopinionated
+
+- No extra global theme just use default styled components theme
+- Responsive breakpoints as per your requirements (Only values not keys)
+- Naming too like **xs** or **mobile**
+
+
+-->
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-type-alias"><a href="modules.html#Breakpoints" class="tsd-kind-icon">Breakpoints</a></li><li class="tsd-kind-type-alias"><a href="modules.html#ContainerResponsiveType" class="tsd-kind-icon">Container<wbr/>Responsive<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#ContainerType" class="tsd-kind-icon">Container<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#FlexItemResponsiveType" class="tsd-kind-icon">Flex<wbr/>Item<wbr/>Responsive<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#FlexItemType" class="tsd-kind-icon">Flex<wbr/>Item<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#FlexResponsiveType" class="tsd-kind-icon">Flex<wbr/>Responsive<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#FlexType" class="tsd-kind-icon">Flex<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#GridItemResponsiveType" class="tsd-kind-icon">Grid<wbr/>Item<wbr/>Responsive<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#GridItemType" class="tsd-kind-icon">Grid<wbr/>Item<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#GridResponsiveType" class="tsd-kind-icon">Grid<wbr/>Responsive<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#GridType" class="tsd-kind-icon">Grid<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#MaxWidths" class="tsd-kind-icon">Max<wbr/>Widths</a></li><li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#Media" class="tsd-kind-icon">Media</a></li><li class="tsd-kind-function"><a href="modules.html#reactLayout" class="tsd-kind-icon">react<wbr/>Layout</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
