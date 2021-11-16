@@ -11,6 +11,7 @@ body {
   font-family: 'Roboto';
 }
 .codebox {
+  padding-top: 10rem;
   /* padding-bottom: 2rem; */
 }
 .title {
@@ -25,14 +26,20 @@ body {
   /* margin-bottom: 5rem; */
   /* padding: 2rem; */
 }
-.title.example {
-  margin-top: 15rem;
-}
 .title.code {
-  margin: 5rem;
   margin-top: 10rem;
+  margin-bottom: 1rem;
 }
 
+p {
+  /* font-style: italic; */
+  text-align: center;
+  letter-spacing: 0.25px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  /* font-weight: 400; */
+  color: #888;
+}
 nav {
   position: absolute;
   top: 0;
@@ -45,11 +52,14 @@ nav .close {
 }
 nav a {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
-  color: lightblue;
-  color: lightcoral;
+  border-bottom: 2px solid;
+  color: #888;
   /* text-transform: uppercase; */
+}
+nav a:hover {
+  color: #aaa;
 }
 @keyframes fadein {
   from {
@@ -121,7 +131,7 @@ pre code {
 
 .features .ul {
   /* font-family: 'Praise', cursive; */
-  list-style: none;
+  /* list-style: none; */
   /* color: palevioletred; */
   color: yellowgreen;
   font-weight: 400;
@@ -130,31 +140,38 @@ pre code {
   padding: 2rem 0;
 }
 
-.container {
+.features .li {
+  padding: 0.5rem 0 0;
+}
+.features svg {
+  color: #888;
+  padding-right: 3px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .features .li {
+    padding: 1rem 0 0;
+  }
+}
+.example {
   text-align: center;
   background-color: #333;
   color: goldenrod;
-  /* font-size: 0.8rem; */
   min-height: 100vh;
   padding: 2rem;
-  margin-top: 7rem !important;
-  margin-bottom: 7rem !important;
-  display: flex;
-  border: 2px dashed;
-  flex-direction: column;
-  justify-content: space-between;
+  border: 5px solid gold;
   font-weight: 300;
+  margin-top: 0.75em;
 }
-/* .gridH1, */
-/* .flexH1 { */
-.container h1 {
+.example h1 {
   background-color: #333;
   margin: 5rem 0 0;
   padding: 1rem;
   letter-spacing: 1px;
   font-weight: 300;
 }
-.container h3 {
+.example h3 {
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -175,4 +192,21 @@ pre code {
 .flex > div {
   background-color: #444;
   padding: 2rem;
+}
+
+.tabs div {
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  border: 2px dotted gold;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  opacity: 0.4;
+}
+.tabs div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.tabs div:active {
+  opacity: 1;
 }
