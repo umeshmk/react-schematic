@@ -6,3 +6,4 @@ dist-ssr
 packageSt.json
 docs
 test-folder/vite
+*.d.ts
