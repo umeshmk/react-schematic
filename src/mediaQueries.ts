@@ -7,8 +7,8 @@ import {Breakpoints, MediaQueries} from './types';
 export const createMediaQueries = (breakpoints: Breakpoints) => {
   let mediaQueries: MediaQueries = {};
 
-  if (Object.values(breakpoints)[0] !== 0)
-    throw new Error("First breakpoint's value must be equal 0");
+  if (breakpoints.xs !== 0)
+    throw new Error("First 'xs' breakpoint's value must be 0");
 
   Object.keys(breakpoints).map((key) => {
     // @ts-ignore
