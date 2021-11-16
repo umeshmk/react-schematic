@@ -2,10 +2,16 @@
   "name": "react-layout",
   "version": "1.0.0",
   "description": "Create responsive Container, Grid & Flex components with custom breakpoints for your react project",
-  "main": "src/index.ts",
+  "main": "./dist/lib/index.js",
+  "typings": "./dist/types/index",
+  "types": "./dist/types/index",
+  "module": "./dist/lib-esm/index.js",
+  "jsnext:main": "./dist/lib-esm/index.js",
   "scripts": {
     "docs": "typedoc src/typeDoc/index.ts --out test-folder/vite/public/docs",
-    "build": "webpack"
+    "build": "npm run esm && npm run commonjs",
+    "commonjs": "tsc",
+    "esm": "tsc -m es6 --outDir dist/lib-esm"
   },
   "repository": {
     "type": "git",
@@ -33,11 +39,6 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.15",
-    "@types/webpack": "^5.28.0",
-    "ts-loader": "^9.2.6",
-    "typedoc": "^0.22.9",
-    "webpack": "^5.64.1",
-    "webpack-cli": "^4.9.1",
-    "webpack-node-externals": "^3.0.0"
+    "typedoc": "^0.22.9"
   }
 }
