@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {BsLayoutWtf} from 'react-icons/bs';
 import './App.css';
 import {coding, codingData, codingJsx} from './codeData';
 import {features} from './data';
@@ -14,7 +15,12 @@ function App() {
     <>
       <Nav />
       <Container maxWidth="md">
-        <h1 className="title">React Layout</h1>
+        <BsLayoutWtf className="logo-back" />
+        <h1 className="title">
+          <BsLayoutWtf className="logo" />
+          <br />
+          React Layout
+        </h1>
         <p>
           Build responsive react layouts without an overhead of any theme
           configuration

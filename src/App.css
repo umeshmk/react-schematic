@@ -22,13 +22,32 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   font-family: 'Praise', cursive;
-  /* background-color: #000; */
-  /* margin-bottom: 5rem; */
-  /* padding: 2rem; */
 }
 .title.code {
   margin-top: 10rem;
   margin-bottom: 1rem;
+}
+.logo {
+  color: #444;
+  font-size: 0.86em;
+  display: none;
+}
+.logo-back {
+  color: #252525;
+  color: #333;
+  color: rgba(255, 255, 255, 0.0351);
+  font-size: 6em;
+  position: fixed;
+  top: 0;
+  left: -20vw;
+  height: 150vh;
+  width: 150vw;
+  z-index: -100;
+}
+@media screen and (max-width: 900px) {
+  .logo-back {
+    top: -20vh;
+  }
 }
 
 p {
@@ -119,20 +138,10 @@ nav a:hover {
 }
 pre {
   border: 5px solid gold;
-  font-size: 1.25rem;
-  color: aliceblue;
-  background-color: #222;
   margin-bottom: 5rem;
   /* padding: 2rem; */
 }
-pre code {
-  /* padding: 2rem; */
-}
-
 .features .ul {
-  /* font-family: 'Praise', cursive; */
-  /* list-style: none; */
-  /* color: palevioletred; */
   color: yellowgreen;
   font-weight: 400;
   font-size: 1.25rem;
@@ -145,7 +154,7 @@ pre code {
 }
 .features svg {
   color: #888;
-  padding-right: 3px;
+  padding-right: 5px;
   font-size: 1rem;
 }
 
