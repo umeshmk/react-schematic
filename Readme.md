@@ -31,3 +31,9 @@ const {Container, Flex, FlexItem, Grid, GridItem} = reactSchematic(
   custom || breakpoints
 );
 ```
+
+### Logs
+
+**v2.0.0**
+
+- added support for padding and margin
