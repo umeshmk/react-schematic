@@ -1,5 +1,5 @@
 export {breakpoints} from './defaultValues';
-export {reactLayout} from './reactLayout';
+export {reactSchematic} from './reactSchematic';
 export type {
   Breakpoints,
   ContainerResponsiveType,

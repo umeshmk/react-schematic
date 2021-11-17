@@ -9,7 +9,7 @@ import {
 import {createMediaQueries} from './mediaQueries';
 import {Breakpoints} from './types';
 
-type ReactLayout = (breakpoints?: Breakpoints) => {
+type ReactSchematic = (breakpoints?: Breakpoints) => {
   Container: ReturnType<typeof getContainer>;
   Grid: ReturnType<typeof getGrid>;
   GridItem: ReturnType<typeof getGridItem>;
@@ -17,7 +17,9 @@ type ReactLayout = (breakpoints?: Breakpoints) => {
   FlexItem: ReturnType<typeof getFlexItem>;
 };
 
-export const reactLayout: ReactLayout = (breakpoints = defaultBreakpoints) => {
+export const reactSchematic: ReactSchematic = (
+  breakpoints = defaultBreakpoints
+) => {
   const atMedia = createMediaQueries(breakpoints);
   const maxWidth = getMaxWidths(breakpoints);
 

@@ -1,6 +1,6 @@
 {
   "name": "react-schematic",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Build responsive react layouts using styled schematics without an overhead of any theme configuration",
   "main": "./dist/lib/index.js",
   "typings": "./dist/types/index.d.ts",
