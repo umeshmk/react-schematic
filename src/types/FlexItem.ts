@@ -2,6 +2,8 @@
  * FLEX ITEM
  */
 
+import {Spacing} from './Spacing';
+
 export type FlexItemType = {
   flex?: string;
   order?: number;
@@ -15,4 +17,4 @@ export type FlexItemType = {
     | 'center'
     | 'stretch'
     | 'baseline';
-};
+} & Spacing;

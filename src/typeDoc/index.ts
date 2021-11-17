@@ -17,4 +17,5 @@ export type {
   GridType,
   MaxWidths,
   Media,
+  Spacing,
 } from '../types';

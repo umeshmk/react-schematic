@@ -1,3 +1,5 @@
+import {Spacing} from './Spacing';
+
 export type MaxWidths = {
   // xs: number;
   sm: number;
@@ -6,4 +8,4 @@ export type MaxWidths = {
   xl: number;
 };
 
-export type ContainerType = {maxWidth?: keyof MaxWidths};
+export type ContainerType = {maxWidth?: keyof MaxWidths} & Spacing;

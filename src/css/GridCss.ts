@@ -1,4 +1,5 @@
 import {Css, GridType} from '../types';
+import {SpacingCss} from './SpacingCss';
 
 export const css: Css<GridType> = {
   display: (v) => `display:${v};`,
@@ -19,4 +20,5 @@ export const css: Css<GridType> = {
   gap: (v) => `grid-gap:${v};`,
   rowGap: (v) => `row-gap:${v};`,
   columnGap: (v) => `col-gap:${v};`,
+  ...SpacingCss,
 };

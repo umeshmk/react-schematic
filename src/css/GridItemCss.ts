@@ -1,4 +1,5 @@
 import {Css, GridItemType} from '../types';
+import {SpacingCss} from './SpacingCss';
 
 export const css: Css<GridItemType> = {
   placeSelf: (v) => `place-self:${v};`,
@@ -11,4 +12,5 @@ export const css: Css<GridItemType> = {
   gridRowStart: (v) => `grid-row-start:${v};`,
   gridColumnEnd: (v) => `grid-column-end:${v};`,
   gridRowEnd: (v) => `grid-row-end:${v};`,
+  ...SpacingCss,
 };

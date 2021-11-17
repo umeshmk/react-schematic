@@ -8,3 +8,4 @@ test-folder/*
 *.d.ts
 ref
 *.tgz
+tsconfig-npm.json

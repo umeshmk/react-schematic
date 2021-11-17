@@ -1,3 +1,5 @@
+import {Spacing} from './Spacing';
+
 export type FlexType = {
   display?: 'flex' | 'inline-flex';
   flexFlow?: string;
@@ -24,4 +26,4 @@ export type FlexType = {
   gap?: string;
   columnGap?: string;
   rowGap?: string;
-};
+} & Spacing;

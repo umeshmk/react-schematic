@@ -5,3 +5,4 @@ export * from './FlexItem';
 export * from './Grid';
 export * from './GridItem';
 export * from './Media';
+export * from './Spacing';
