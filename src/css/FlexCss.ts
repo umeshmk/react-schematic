@@ -1,7 +1,7 @@
-import {Css, FlexType} from '../types';
+import {Css, FlexType, Spacing} from '../types';
 import {SpacingCss} from './SpacingCss';
 
-export const css: Css<FlexType> = {
+export const css: Css<FlexType & Spacing> = {
   display: (v) => `display:${v};`,
   flexFlow: (v) => `flex-flow:${v};`,
   flexDirection: (v) => `flex-direction:${v};`,

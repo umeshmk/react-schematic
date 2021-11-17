@@ -1,7 +1,7 @@
-import {Css, GridType} from '../types';
+import {Css, GridType, Spacing} from '../types';
 import {SpacingCss} from './SpacingCss';
 
-export const css: Css<GridType> = {
+export const css: Css<GridType & Spacing> = {
   display: (v) => `display:${v};`,
   grid: (v) => `grid:${v};`,
   gridTemplate: (v) => `grid-template :${v};`,

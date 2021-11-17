@@ -18,4 +18,6 @@ export type {
   MaxWidths,
   Media,
   Spacing,
+  Responsive,
+  ValidComponents,
 } from '../types';

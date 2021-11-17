@@ -1,5 +1,3 @@
-import {Spacing} from './Spacing';
-
 export type GridType = {
   // type Basic
   display?: 'grid' | 'inline-grid';
@@ -44,4 +42,4 @@ export type GridType = {
   gap?: string;
   columnGap?: string;
   rowGap?: string;
-} & Spacing;
+};

@@ -1,7 +1,7 @@
-import {Css, GridItemType} from '../types';
+import {Css, GridItemType, Spacing} from '../types';
 import {SpacingCss} from './SpacingCss';
 
-export const css: Css<GridItemType> = {
+export const css: Css<GridItemType & Spacing> = {
   placeSelf: (v) => `place-self:${v};`,
   alignSelf: (v) => `align-self:${v};`,
   justifySelf: (v) => `justify-self:${v};`,

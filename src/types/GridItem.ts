@@ -1,5 +1,3 @@
-import {Spacing} from './Spacing';
-
 export type GridItemType = {
   // type Area
   gridArea?: string;
@@ -14,4 +12,4 @@ export type GridItemType = {
   placeSelf?: string; // <align-Self> / <justify-Self>
   justifySelf?: 'start' | 'end' | 'center' | 'stretch';
   alignSelf?: 'start' | 'end' | 'center' | 'stretch';
-} & Spacing;
+};
