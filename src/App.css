@@ -163,6 +163,9 @@ pre {
     padding: 1rem 0 0;
   }
 }
+.exampleH1 {
+  margin-top: 5rem;
+}
 .example {
   text-align: center;
   background-color: #333;
@@ -186,12 +189,10 @@ pre {
 }
 .grid {
   background-color: #333;
-  padding: 2rem;
   border: 2px dashed;
 }
 .grid > div {
   background-color: #444;
-  padding: 2rem;
 }
 .flex {
   background-color: #333;
@@ -218,4 +219,14 @@ pre {
 }
 .tabs div:active {
   opacity: 1;
+}
+
+.footer p {
+  margin-top: 15rem;
+  padding: 3rem;
+  font-size: 1.42rem;
+}
+.footer a {
+  color: #888;
+  text-decoration: underline;
 }

@@ -11,11 +11,11 @@ export const Nav = () => {
     closeModal: MouseEventHandler<HTMLAnchorElement>;
   }) => (
     <>
-      <a href="docs/index.html" target="_blank" onClick={closeModal}>
+      <a href="docs/index.html" onClick={closeModal}>
         Docs
       </a>
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="http://github.com/umeshmk" target="_blank" onClick={closeModal}>
+      <a href="http://github.com/umeshmk/react-schematic" onClick={closeModal}>
         Github
       </a>
     </>

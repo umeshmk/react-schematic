@@ -1,7 +1,7 @@
 import {FaMobileAlt} from 'react-icons/fa';
 import {MdNotInterested} from 'react-icons/md';
 import {SiCsswizardry, SiStyledcomponents, SiTypescript} from 'react-icons/si';
-import {FlexItemResponsiveType, GridItemResponsiveType} from 'react-layout';
+import {FlexItemResponsiveType, GridItemResponsiveType} from 'react-schematic';
 
 /**
  * Features

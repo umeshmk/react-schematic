@@ -4,6 +4,7 @@ import './App.css';
 import {coding, codingData, codingJsx} from './codeData';
 import {features} from './data';
 import {Example} from './Example';
+import {Footer} from './Footer';
 import {Container, Flex, FlexItem} from './layout';
 import {Nav} from './Nav';
 import './prism.css';
@@ -19,11 +20,11 @@ function App() {
         <h1 className="title">
           <BsLayoutWtf className="logo" />
           <br />
-          React Layout
+          React Schematic
         </h1>
         <p>
-          Build responsive react layouts without an overhead of any theme
-          configuration
+          Build responsive react layouts using styled schematics without an
+          overhead of any theme configuration
         </p>
         <div className="features">
           <Flex
@@ -47,7 +48,7 @@ function App() {
         </pre>
       </Container>
       <Container className="codebox" maxWidth="md">
-        <h1 className="title">Example</h1>
+        <h1 className="title exampleH1">Example</h1>
         <Flex className="tabs" justifyContent="center">
           <div
             onClick={() => setCodeTab(1)}
@@ -74,19 +75,8 @@ function App() {
         <pre style={{display: `${codeTab === 3 ? 'block' : 'none'}`}}>
           <code className="language-tsx">{codingData}</code>
         </pre>
-
-        {/* {codeTab && (
-          <pre>
-            <code className="language-tsx">{codingData}</code>
-          </pre>
-        )}
-
-        {!codeTab && (
-          <pre>
-            <code className="language-tsx">{codingJsx}</code>
-          </pre>
-        )} */}
       </Container>
+      <Footer />
     </>
   );
 }

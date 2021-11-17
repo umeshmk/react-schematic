@@ -1,4 +1,4 @@
-import {Breakpoints, reactLayout} from 'react-layout';
+import {Breakpoints, reactSchematic} from 'react-schematic';
 
 let breakpoints: Breakpoints = {
   xs: 0,
@@ -9,4 +9,4 @@ let breakpoints: Breakpoints = {
 };
 
 export const {Container, Flex, FlexItem, Grid, GridItem} =
-  reactLayout(breakpoints);
+  reactSchematic(breakpoints);

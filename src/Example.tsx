@@ -15,9 +15,16 @@ export const Example = () => {
             md: 'repeat(2,1fr)',
             lg: 'repeat(3,1fr)',
           }}
+          pt="2rem"
+          pb="2rem"
+          pr="2rem"
+          pl="2rem"
           gap="2rem">
           {gridItemsData.map((item) => (
-            <GridItem key={item.text} gridArea={item.gridArea}>
+            <GridItem
+              key={item.text}
+              gridArea={item.gridArea}
+              padding={{xs: '1rem', md: '2rem', lg: '3rem'}}>
               <h3>{item.text}</h3>
             </GridItem>
           ))}

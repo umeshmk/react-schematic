@@ -1,5 +1,5 @@
 {
-  "name": "testing",
+  "name": "ghpages",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,7 @@
     "react-dom": "^17.0.0",
     "react-element-to-jsx-string": "^14.3.4",
     "react-icons": "^4.3.1",
-    "react-layout": "file:..\\.."
+    "react-schematic": "file:..\\.."
   },
   "devDependencies": {
     "@types/prettier": "^2.4.2",

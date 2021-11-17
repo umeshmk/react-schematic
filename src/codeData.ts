@@ -1,5 +1,5 @@
 export const coding = `
-import {reactLayout, breakpoints, Breakpoints} from 'react-layout';
+import {reactSchematic, breakpoints, Breakpoints} from 'react-schematic';
 
 // Pass custom breakpoints as min-width
 let custom:Breakpoints = {
@@ -11,7 +11,7 @@ let custom:Breakpoints = {
   };
 
 // Get responsive styled.div components 
-const {Container, Flex, FlexItem, Grid, GridItem} = reactLayout(custom || breakpoints);
+const {Container, Flex, FlexItem, Grid, GridItem} = reactSchematic(custom || breakpoints);
 
 `;
 
@@ -20,22 +20,26 @@ export const codingJsx = `
 export const Example = () => {
     return (
       <>
-        <Container
-          maxWidth={{md: 'sm', lg: 'md', xl: 'lg'}}
-          className="container">
+        <Container maxWidth={{md: 'sm', lg: 'md', xl: 'lg'}}>
           <h1>{'<Container>'}</h1>
   
           <h1>{'<Grid>'}</h1>
           <Grid
-            className="grid"
             gridTemplateColumns={{
               xs: 'repeat(1,1fr)',
               md: 'repeat(2,1fr)',
               lg: 'repeat(3,1fr)',
-            }}
+            }}              
+            pt="2rem"
+            pb="2rem"
+            pr="2rem"
+            pl="2rem"
             gap="2rem">
             {gridItemsData.map((item) => (
-              <GridItem key={item.text} gridArea={item.gridArea}>
+              <GridItem
+                key={item.text}
+                gridArea={item.gridArea}
+                padding={{xs: '1rem', md: '2rem', lg: '3rem'}}>
                 <h3>{item.text}</h3>
               </GridItem>
             ))}
@@ -43,7 +47,6 @@ export const Example = () => {
   
           <h1>{'<Flex>'}</h1>
           <Flex
-            className="flex"
             justifyContent="space-between"
             alignItems={{xs: 'stretch'}}
             alignContent={{xs: 'stretch'}}
