@@ -1,0 +1,4 @@
+{
+  "entryPoints": ["src/typeDoc/index.ts"],
+  "out": "test-folder/vite/public/docs"
+}

@@ -3,8 +3,8 @@ node_modules
 dist
 dist-ssr
 *.local
-packageSt.json
 docs
-test-folder/vite
+test-folder/*
 *.d.ts
 ref
+*.tgz

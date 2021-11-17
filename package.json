@@ -1,21 +1,23 @@
 {
-  "name": "react-layout",
-  "version": "1.0.0",
-  "description": "Create responsive Container, Grid & Flex components with custom breakpoints for your react project",
+  "name": "react-schematic",
+  "version": "1.0.1",
+  "description": "Build responsive react layouts using styled schematics without an overhead of any theme configuration",
   "main": "./dist/lib/index.js",
-  "typings": "./dist/types/index",
-  "types": "./dist/types/index",
+  "typings": "./dist/types/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "module": "./dist/lib-esm/index.js",
   "jsnext:main": "./dist/lib-esm/index.js",
   "scripts": {
-    "docs": "typedoc src/typeDoc/index.ts --out test-folder/vite/public/docs",
-    "build": "npm run esm && npm run commonjs",
+    "docs": "typedoc",
+    "build": "npm run clean && npm run esm && npm run commonjs && npm run check",
     "commonjs": "tsc",
-    "esm": "tsc -m es6 --outDir dist/lib-esm"
+    "esm": "tsc -m es6 --outDir dist/lib-esm",
+    "clean": "shx rm -rf dist",
+    "check": "npm pack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/umeshmk/react-layout.git"
+    "url": "git+https://github.com/umeshmk/react-schematic.git"
   },
   "keywords": [
     "react",
@@ -31,14 +33,15 @@
   "author": "Umesh Kadam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/umeshmk/react-layout/issues"
+    "url": "https://github.com/umeshmk/react-schematic/issues"
   },
-  "homepage": "https://github.com/umeshmk/react-layout#readme",
+  "homepage": "https://github.com/umeshmk/react-schematic#readme",
   "dependencies": {
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.15",
+    "shx": "^0.3.3",
     "typedoc": "^0.22.9"
   }
 }
