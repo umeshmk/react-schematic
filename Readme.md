@@ -1,10 +1,11 @@
 # React Schematic
 
+![](https://i.imgur.com/WObtHQO.png)
+
 **Build responsive react layouts using styled schematics without an overhead of any theme configuration**
 
-[React Schematic](https://umeshmk.github.io/react-schematic/)
-
-[React Schematic - Docs](https://umeshmk.github.io/react-schematic/docs)
+- [React Schematic](https://umeshmk.github.io/react-schematic/)
+- [React Schematic - Docs](https://umeshmk.github.io/react-schematic/docs)
 
 ### Install
 
